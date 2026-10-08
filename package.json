@@ -1,0 +1,21 @@
+{
+  "name": "zumba-with-b",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": { "node": ">=20.3.0" },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && node scripts/postbuild.mjs",
+    "preview": "astro preview",
+    "test": "node --test scripts/lib/extract.test.mjs scripts/lib/edits.test.mjs src/lib/paths.test.mjs src/lib/content-shape.test.mjs src/lib/content-parity.test.mjs",
+    "check": "npm run build && node scripts/check-dist.mjs",
+    "scrape": "node scripts/scrape.mjs",
+    "fonts": "node scripts/fonts.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.2",
+    "@tailwindcss/vite": "^4.2.4",
+    "astro": "^5.18.1",
+    "tailwindcss": "^4.2.4"
+  }
+}

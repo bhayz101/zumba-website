@@ -1,0 +1,18 @@
+---
+import { getContent, type Lang } from '../lib/i18n';
+import { localizedPath } from '../lib/paths.mjs';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ui = getContent(lang, 'ui');
+const items: { code: Lang; label: string }[] = [{ code: 'en', label: 'EN' }, { code: 'fr', label: 'FR' }];
+---
+<nav aria-label={ui.switcher.label} class="flex items-center gap-1 text-sm font-bold">
+  {items.map((i, n) => (
+    <>
+      {n > 0 && <span aria-hidden="true" class="text-accent">|</span>}
+      <a href={localizedPath(i.code, Astro.url.pathname)} hreflang={i.code} lang={i.code} aria-label={`${i.label} (${ui.switcher[i.code]})`}
+        aria-current={lang === i.code ? 'true' : undefined}
+        class="inline-flex min-h-11 min-w-11 items-center justify-center rounded px-2 text-ink hover:text-brand aria-[current=true]:text-brand aria-[current=true]:underline underline-offset-8">{i.label}</a>
+    </>
+  ))}
+</nav>

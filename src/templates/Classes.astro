@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Section from '../components/Section.astro';
+import Button from '../components/Button.astro';
+import { getContent, type Lang } from '../lib/i18n';
+import { localizedPath } from '../lib/paths.mjs';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ui = getContent(lang, 'ui');
+const c = getContent(lang, 'classes');
+---
+<BaseLayout lang={lang} title={ui.titles.classes} description={c.hero.text}>
+  <Hero title={c.hero.title} text={c.hero.text} image={c.hero.image} alt={c.hero.alt}>
+    <a href={localizedPath(lang, c.hero.button.href)} class="inline-flex min-h-12 items-center rounded-full bg-white px-6 py-3 font-bold text-brand transition-colors hover:bg-accent">{c.hero.button.label}</a>
+  </Hero>
+  <Section title={c.expect.title} intro={c.expect.intro}>
+    <ol class="grid gap-6 md:grid-cols-3">
+      {c.expect.steps.map((s, i) => (
+        <li class="rounded-2xl border border-accent/70 p-6"><span class="font-display text-3xl font-bold text-accent" aria-hidden="true">{i + 1}</span><h3 class="mb-2 text-xl font-bold text-brand">{s.title}</h3><p>{s.text}</p></li>
+      ))}
+    </ol>
+    <img src={c.expect.image} alt={c.expect.alt} loading="lazy" class="mt-8 aspect-[10/7] w-full rounded-2xl object-cover object-[50%_43%]" />
+    <div class="mt-8"><Button href={localizedPath(lang, c.expect.button.href)}>{c.expect.button.label}</Button></div>
+  </Section>
+  {c.sections.map((s, i) => (
+    <Section tone={i % 2 === 0 ? 'soft' : 'paper'} title={s.title}>
+      <div class={`grid items-center gap-8 ${s.image ? 'md:grid-cols-2' : ''}`}>
+        <div><p>{s.text}</p>{s.button && <div class="mt-6"><Button href={localizedPath(lang, s.button.href)}>{s.button.label}</Button></div>}</div>
+        {s.image && <img src={s.image} alt={s.alt} loading="lazy" class="aspect-[4/3] w-full rounded-2xl object-cover" />}
+      </div>
+    </Section>
+  ))}
+</BaseLayout>

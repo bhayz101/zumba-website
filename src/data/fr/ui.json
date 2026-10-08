@@ -1,0 +1,18 @@
+{
+  "skip": "Aller au contenu principal",
+  "defaultDescription": "Cours de Zumba, danse et fitness à haute énergie, à Paris.",
+  "nav": [
+    { "label": "Accueil", "href": "/" },
+    { "label": "Nos cours", "href": "/our-classes" },
+    { "label": "Tarifs & Pass", "href": "/pricing-passes" },
+    { "label": "À propos de B", "href": "/about-b" },
+    { "label": "Blog Fitness", "href": "/fitness-blog" }
+  ],
+  "titles": { "home": "Accueil", "classes": "Nos cours", "pricing": "Tarifs & Pass", "about": "À propos de B", "blog": "Blog Fitness" },
+  "payWithPaypal": "Payer avec PayPal",
+  "newsletter": { "label": "Adresse e-mail", "placeholder": "Votre e-mail", "submit": "S'abonner" },
+  "readArticle": "Lire l'article",
+  "backToBlog": "← Blog Fitness",
+  "blogPostButtons": { "classes": "Découvrir nos cours", "more": "Plus d'articles" },
+  "switcher": { "label": "Langue", "en": "English", "fr": "Français" }
+}

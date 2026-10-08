@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Section from '../components/Section.astro';
+import { getContent, type Lang } from '../lib/i18n';
+import { localizedPath } from '../lib/paths.mjs';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ui = getContent(lang, 'ui');
+const c = getContent(lang, 'blog');
+---
+<BaseLayout lang={lang} title={ui.titles.blog} description={c.hero.text}>
+  <Hero title={c.hero.title} text={c.hero.text} />
+  <Section>
+    <div class="grid gap-8">
+      {c.posts.map((p) => (
+        <article class="group relative grid items-center gap-6 rounded-2xl border border-accent/70 p-6 transition-shadow focus-within:ring-4 focus-within:ring-brand/40 hover:shadow-lg md:grid-cols-[1fr_2fr]">
+          <img src={p.image} alt={p.alt} loading="lazy" style={`object-position:${p.focus}`} class="aspect-[4/5] w-full rounded-xl object-cover" />
+          <div>
+            <h2 class="mb-2 text-2xl font-bold"><a href={localizedPath(lang, `/fitness-blog/${p.slug}`)} class="text-brand after:absolute after:inset-0 after:content-[''] focus-visible:outline-none group-hover:underline">{p.title}</a></h2>
+            <p>{p.text}</p>
+            <p class="mt-4 font-bold text-brand underline" aria-hidden="true">{ui.readArticle}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </Section>
+</BaseLayout>

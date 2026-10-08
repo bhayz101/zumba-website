@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "title": "Danse fitness à haute énergie à Paris",
+    "text": "Rejoignez Zumba with B pour un entraînement cardio tonique porté par des rythmes latins, des mouvements accessibles à tous et une belle énergie de groupe. Aucune expérience en danse requise : il suffit d'apporter vos baskets et votre sourire.",
+    "image": "/images/3-3775566.jpeg",
+    "alt": "Cours collectif de danse fitness dans un studio lumineux en briques",
+    "button": { "label": "Voir les tarifs et pass", "href": "/pricing-passes" }
+  },
+  "expect": {
+    "title": "À quoi vous attendre à chaque séance",
+    "intro": "Chaque cours est pensé pour offrir un entraînement cardio complet qui ressemble plus à une soirée dansante qu'à une séance de gym. Voici le déroulé de la soirée, dès votre arrivée.",
+    "steps": [
+      {
+        "title": "Échauffement et rythme",
+        "text": "Ouverture des portes à 20 h 40, début des cours à 21 h précises. Nous démarrons en douceur avec un échauffement dynamique guidé pour préparer vos articulations et vos muscles."
+      },
+      {
+        "title": "Cardio party",
+        "text": "Pendant 60 minutes, bougez sur de la salsa, de la bachata, du merengue et des rythmes du monde entier. Nos chorégraphies faciles à suivre vous permettent de pousser votre rythme et d'affirmer votre style."
+      },
+      {
+        "title": "Retour au calme et convivialité",
+        "text": "Nous terminons par des étirements apaisants pour favoriser la récupération, suivis de 15 minutes après le cours pour discuter et échanger avec les autres danseurs."
+      }
+    ],
+    "button": { "label": "Prenez votre pass", "href": "/pricing-passes" },
+    "image": "/images/4-img_6554-high.png",
+    "alt": "Saut en pleine danse sur scène, sous les projecteurs"
+  },
+  "sections": [
+    {
+      "title": "Pensé pour tous les corps et tous les niveaux",
+      "text": "Vous n'avez jamais pris de cours de danse ? Vous êtes les bienvenus. Nos séances accueillent tous les âges, tous les parcours et toutes les conditions physiques, dans un espace bienveillant et sans jugement."
+    },
+    {
+      "title": "Que prévoir et quand arriver",
+      "text": "Arrivez entre 20 h 40 et 20 h 45 pour vous installer. Les portes du studio ferment à 21 h pile pour que chacun profite d'une séance sans interruption. Portez des chaussures de sport qui maintiennent bien le pied et des vêtements souples dans lesquels vous aimez bouger. N'oubliez pas une grande bouteille d'eau pour rester hydraté tout au long de l'entraînement.",
+      "image": "/images/6-3927386.jpeg",
+      "alt": "Tenue de sport, gourde, écouteurs et baskets posés sur une table"
+    },
+    {
+      "title": "Réservation et moyens de paiement",
+      "text": "Réserver votre place à l'avance en ligne est le moyen le plus simple de garantir votre place sur la piste. Vous pouvez aussi nous écrire un message pour réserver, et le paiement en espèces est accepté à l'entrée avant 21 h.",
+      "button": { "label": "Découvrir les pass et tarifs", "href": "/pricing-passes" }
+    }
+  ]
+}

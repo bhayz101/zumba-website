@@ -1,0 +1,24 @@
+---
+import site from '../data/site.json';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { cleanPath, localizedPath } from '../lib/paths.mjs';
+import { getContent, type Lang } from '../lib/i18n';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ui = getContent(lang, 'ui');
+const path = cleanPath(Astro.url.pathname);
+---
+<header class="sticky top-0 z-10 bg-white/95 backdrop-blur border-b border-accent/50">
+  <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-4 py-3">
+    <a href={localizedPath(lang, '/')} class="flex items-center gap-2 font-display text-xl font-bold text-brand"><img src="/images/7-logo-1-high.png" alt="" width="48" height="36" class="h-9 w-auto" />{site.name}</a>
+    <nav aria-label="Main">
+      <ul class="flex flex-wrap gap-x-5 gap-y-1">
+        {ui.nav.map((n) => (
+          <li><a href={localizedPath(lang, n.href)} aria-current={path === cleanPath(localizedPath(lang, n.href)) ? 'page' : undefined}
+            class="py-2 font-medium hover:text-brand aria-[current=page]:text-brand aria-[current=page]:underline underline-offset-8">{n.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+    <LanguageSwitcher lang={lang} />
+  </div>
+</header>

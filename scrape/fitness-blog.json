@@ -1,0 +1,28 @@
+{
+  "url": "https://www.zumbawithb.com/fitness-blog",
+  "title": "Fitness Blog | Zumba with B",
+  "lines": [
+    "Dance, fitness, and wellness insights",
+    "Explore inspiration, practical tips for beginners, workout motivation, and the uplifting power of movement. Dive into our latest articles to energize your body and mind.",
+    "Why Zumba is the workout you will actually keep",
+    "Wondering why Zumba continues to captivate fitness enthusiasts and dance novices alike? Unlike repetitive gym routines, Zumba combines vibrant Latin and international rhythms with dynamic cardio intervals. It feels more like a dance party than a traditional workout, helping you burn calories, improve coordination, and relieve everyday tension without staring at a clock.",
+    "The power of group energy in reaching your goals",
+    "Staying consistent with personal fitness goals can be challenging on your own. When you enter a group dance fitness studio, the shared rhythm and infectious enthusiasm create natural accountability. Moving together builds an encouraging community where beginners feel supported and regular dancers stay motivated week after week.",
+    "The transformative mental health benefits of dance",
+    "Dance fitness offers profound advantages that extend far beyond physical conditioning. The synchrony of music and movement stimulates endorphin release, reduces stress hormones, and sharpens cognitive focus. Step onto the dance floor, leave daily pressures behind, and discover how joyful movement nurtures your mental well-being."
+  ],
+  "images": [
+    {
+      "remote": "https://primary.jwwb.nl/pexels/65/6516187.jpeg",
+      "local": "/images/11-6516187.jpeg"
+    },
+    {
+      "remote": "https://primary.jwwb.nl/pexels/84/8436586.jpeg",
+      "local": "/images/12-8436586.jpeg"
+    },
+    {
+      "remote": "https://primary.jwwb.nl/pexels/72/7242828.jpeg",
+      "local": "/images/13-7242828.jpeg"
+    }
+  ]
+}

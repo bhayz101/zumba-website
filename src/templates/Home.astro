@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Section from '../components/Section.astro';
+import Button from '../components/Button.astro';
+import FaqList from '../components/FaqList.astro';
+import { getContent, type Lang } from '../lib/i18n';
+import { localizedPath } from '../lib/paths.mjs';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ui = getContent(lang, 'ui');
+const c = getContent(lang, 'home');
+import site from '../data/site.json';
+---
+<BaseLayout lang={lang} title={ui.titles.home} description={c.hero.text}>
+  <Hero title={c.hero.title} text={c.hero.text} image={c.hero.image} alt={c.hero.alt}>
+    {c.hero.buttons.map((b) => <a href={localizedPath(lang, b.href)} class={`inline-flex min-h-12 items-center rounded-full px-6 py-3 font-bold transition-colors ${b.variant === 'ghost' ? 'border-2 border-white text-white hover:bg-white hover:text-brand' : 'bg-white text-brand hover:bg-accent'}`}>{b.label}</a>)}
+  </Hero>
+  <Section title={c.formats.title}>
+    <div class="grid items-center gap-8 md:grid-cols-2">
+      <img src={c.formats.image} alt={c.formats.alt} loading="lazy" class="aspect-[4/3] w-full rounded-2xl object-cover" />
+      <div><h3 class="mb-2 text-2xl font-bold">{c.formats.name}</h3><p>{c.formats.text}</p></div>
+    </div>
+    <figure class="mt-10 rounded-2xl bg-soft p-8">
+      <blockquote class="text-xl italic">{c.quote.text}</blockquote>
+      <figcaption class="mt-3 font-bold text-brand">{c.quote.author}</figcaption>
+    </figure>
+  </Section>
+  <Section tone="soft" title={c.cta.title} intro={c.cta.text}><Button href={localizedPath(lang, c.cta.href)}>{c.cta.button}</Button></Section>
+  <Section title={c.faq.title} intro={c.faq.intro}><FaqList items={c.faq.items} /></Section>
+  <Section tone="soft" title={c.community.title}>
+    <div class="grid gap-8 md:grid-cols-2">
+      <div class="space-y-6">
+        <address class="not-italic">
+          <p class="font-bold">{c.community.venue}</p>
+          <p>{c.community.city}</p>
+          <p><a class="text-brand underline" href={c.community.map}>{c.community.address}</a></p>
+        </address>
+        <div><h3 class="font-bold">{c.community.scheduleTitle}</h3><p><a class="text-brand underline" href={c.community.calendar}>{c.community.schedule}</a></p></div>
+        <div>
+          <h3 class="font-bold">{c.community.contactTitle}</h3>
+          <p>{c.community.contactIntro}</p>
+          <ul class="mt-2 space-y-1">
+            {site.whatsapp && <li><a class="text-brand underline" href={site.whatsapp}>{c.community.whatsappLabel}</a></li>}
+            <li><a class="text-brand underline" href={`mailto:${c.community.email}`}>{c.community.email}</a></li>
+          </ul>
+        </div>
+        <div><h3 class="font-bold">{c.community.followTitle}</h3><p><a class="text-brand underline" href={c.community.instagram}>{c.community.instagramLabel}</a></p></div>
+      </div>
+      <img src={c.community.image} alt={c.community.alt} loading="lazy" class="aspect-[4/3] w-full rounded-2xl object-cover" />
+    </div>
+  </Section>
+</BaseLayout>

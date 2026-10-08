@@ -1,0 +1,18 @@
+{
+  "skip": "Skip to main content",
+  "defaultDescription": "High-energy Zumba dance fitness classes in Paris.",
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "Our Classes", "href": "/our-classes" },
+    { "label": "Pricing & Passes", "href": "/pricing-passes" },
+    { "label": "About B", "href": "/about-b" },
+    { "label": "Fitness Blog", "href": "/fitness-blog" }
+  ],
+  "titles": { "home": "Home", "classes": "Our Classes", "pricing": "Pricing & Passes", "about": "About B", "blog": "Fitness Blog" },
+  "payWithPaypal": "Pay with PayPal",
+  "newsletter": { "label": "Email address", "placeholder": "Your email", "submit": "Subscribe" },
+  "readArticle": "Read article",
+  "backToBlog": "← Fitness Blog",
+  "blogPostButtons": { "classes": "Explore our classes", "more": "More articles" },
+  "switcher": { "label": "Language", "en": "English", "fr": "Français" }
+}

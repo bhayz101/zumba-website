@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Dance, fitness, and wellness insights",
+    "text": "Explore inspiration, practical tips for beginners, workout motivation, and the uplifting power of movement. Dive into our latest articles to energize your body and mind."
+  },
+  "posts": [
+    {
+      "slug": "why-zumba-is-the-workout-you-will-actually-keep",
+      "title": "Why Zumba is the workout you will actually keep",
+      "text": "Wondering why Zumba continues to captivate fitness enthusiasts and dance novices alike? Unlike repetitive gym routines, Zumba combines vibrant Latin and international rhythms with dynamic cardio intervals. It feels more like a dance party than a traditional workout, helping you burn calories, improve coordination, and relieve everyday tension without staring at a clock.",
+      "image": "/images/11-6516187.jpeg",
+      "alt": "Woman stretching her arm in a bright studio",
+      "focus": "50% 40%"
+    },
+    {
+      "slug": "the-power-of-group-energy-in-reaching-your-goals",
+      "title": "The power of group energy in reaching your goals",
+      "text": "Staying consistent with personal fitness goals can be challenging on your own. When you enter a group dance fitness studio, the shared rhythm and infectious enthusiasm create natural accountability. Moving together builds an encouraging community where beginners feel supported and regular dancers stay motivated week after week.",
+      "image": "/images/12-8436586.jpeg",
+      "alt": "Smiling woman seated on a yoga mat",
+      "focus": "50% 30%"
+    },
+    {
+      "slug": "the-transformative-mental-health-benefits-of-dance",
+      "title": "The transformative mental health benefits of dance",
+      "text": "Dance fitness offers profound advantages that extend far beyond physical conditioning. The synchrony of music and movement stimulates endorphin release, reduces stress hormones, and sharpens cognitive focus. Step onto the dance floor, leave daily pressures behind, and discover how joyful movement nurtures your mental well-being.",
+      "image": "/images/13-7242828.jpeg",
+      "alt": "Smiling woman with curly hair outdoors",
+      "focus": "50% 30%"
+    }
+  ]
+}

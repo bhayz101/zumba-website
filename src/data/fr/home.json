@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "title": "Dansez, transpirez, lâchez prise",
+    "text": "Vivez des séances de Zumba pleines d'énergie et de bonne humeur à Paris, adaptées à tous les niveaux de forme. Brûlez des calories, boostez votre moral et rejoignez dès aujourd'hui notre communauté dynamique.",
+    "image": "/images/0-13409546.jpeg",
+    "alt": "Danseuse souriante en tenue Zumba, en plein mouvement",
+    "buttons": [
+      { "label": "Voir nos cours", "href": "/our-classes" },
+      { "label": "Tarifs et pass", "href": "/pricing-passes", "variant": "ghost" }
+    ]
+  },
+  "formats": {
+    "title": "Nos formats de cours",
+    "name": "Zumba classique",
+    "text": "Un entraînement cardio dansé à haute énergie, sur des rythmes latins et internationaux entraînants. Idéal pour tous les niveaux : lâchez-vous, brûlez des calories et souriez.",
+    "image": "/images/1-8957645.jpeg",
+    "alt": "Danseurs en mouvement dans un studio lumineux"
+  },
+  "quote": {
+    "text": "« C'est bien plus qu'un simple cours, c'est votre échappée hebdomadaire où vous pouvez simplement être vous-même. »",
+    "author": "Membre de LA Fitness"
+  },
+  "cta": {
+    "title": "Prêt(e) à danser pour votre forme ?",
+    "text": "Prenez un pass pour un cours, réservez un pack de plusieurs séances ou rejoignez notre groupe WhatsApp pour suivre le planning en temps réel et les événements de danse parisiens.",
+    "button": "Prenez votre pass",
+    "href": "/pricing-passes"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "intro": "Retrouvez des réponses rapides sur le lieu des séances, la tenue à prévoir, le paiement en ligne et la façon de rester en contact avec notre communauté de danse parisienne.",
+    "items": [
+      {
+        "q": "Ai-je besoin d'une expérience en danse ?",
+        "a": "Pas du tout ! Chaque chorégraphie repose sur des pas faciles à suivre. L'essentiel est de bouger en musique et de vous amuser à votre rythme."
+      },
+      {
+        "q": "Que dois-je porter et apporter ?",
+        "a": "Portez des baskets d'intérieur qui maintiennent bien le pied et une tenue de sport confortable. N'oubliez pas une gourde réutilisable et une petite serviette !"
+      },
+      {
+        "q": "Comment acheter des pass en ligne ?",
+        "a": "Vous pouvez acheter des pass à l'unité ou des packs de plusieurs cours directement sur notre page Tarifs & Pass, en toute sécurité par carte bancaire."
+      },
+      {
+        "q": "Comment rejoindre le groupe WhatsApp ?",
+        "a": "Inscrivez-vous via notre section contact ou envoyez un e-mail pour recevoir les actualités de la semaine, les annonces de planning et les liens d'invitation directs au groupe WhatsApp."
+      },
+      {
+        "q": "Quelle est la politique d'annulation ?",
+        "a": "Pour annuler une réservation, contactez-moi directement. Toute annulation faite plus de 24 heures avant le début du cours donne droit à un remboursement de 100 % pour ce cours. Toute annulation faite dans les 24 heures avant le début du cours donne droit à un remboursement de 50 %. Les absences sans annulation ne sont pas remboursées."
+      }
+    ]
+  },
+  "community": {
+    "title": "Rejoignez notre communauté",
+    "venue": "Centre Momboye",
+    "city": "Paris, France",
+    "address": "25 Rue Boyer, 75020 Paris",
+    "scheduleTitle": "Planning hebdomadaire des cours",
+    "schedule": "Tous les mardis de 20 h 45 à 22 h 15",
+    "contactTitle": "Nous contacter",
+    "contactIntro": "Contactez-moi directement",
+    "whatsappLabel": "Groupe WhatsApp",
+    "email": "b.hayz101@gmail.com",
+    "followTitle": "Suivez Zumba with B",
+    "instagramLabel": "Instagram",
+    "calendar": "https://calendar.app.google/cCHH4upGEMzYH4hz6",
+    "instagram": "https://instagram.com/awhbethh",
+    "map": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x47e66d93169280d1:0xf0af5c5646c02da2",
+    "image": "/images/2-16761894.jpeg",
+    "alt": "Coin de rue parisien près du studio"
+  }
+}

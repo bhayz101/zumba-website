@@ -1,0 +1,81 @@
+{
+  "hero": {
+    "title": "Pricing and passes",
+    "text": "Join high-energy Zumba sessions in Paris designed to keep you moving, sweating, and smiling. Choose between single drop-in passes or flexible monthly packages, and enjoy complete transparency with no hidden fees."
+  },
+  "intro": {
+    "title": "Class rates and policies",
+    "text": "Book online via PayPal, pay on our website, or pay cash directly at the door before session start. Your first class is 100% free when you subscribe to our mailing list."
+  },
+  "tables": [
+    {
+      "caption": "Class options",
+      "head": [
+        "Class options",
+        "Price"
+      ],
+      "rows": [
+        [
+          "Single drop-in session",
+          "€10.00"
+        ],
+        [
+          "Monthly pass (4 classes)",
+          "€35.00"
+        ]
+      ]
+    },
+    {
+      "caption": "Payment options",
+      "head": [
+        "Payment options",
+        "Details"
+      ],
+      "rows": [
+        [
+          "Online payment",
+          "Preferred via website or PayPal"
+        ],
+        [
+          "In-person payment",
+          "Cash accepted at the door"
+        ],
+        [
+          "WhatsApp community",
+          "Direct booking updates and confirmation"
+        ]
+      ]
+    },
+    {
+      "caption": "Terms and cancellation",
+      "head": [
+        "Terms and cancellation",
+        "Policy"
+      ],
+      "rows": [
+        [
+          "Pass validity",
+          "Valid for 1 year from purchase"
+        ],
+        [
+          "Notice of 24+ hours",
+          "100% refund"
+        ],
+        [
+          "Same-day cancellation",
+          "50% refund"
+        ],
+        [
+          "No-show fee",
+          "Full payment is taken, no refund"
+        ]
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Ready to dance with us?",
+    "text": "Sign up for our newsletter to claim your free first class or reserve your spot today. Discover our full weekly timetable and see what to expect in every session.",
+    "button": "Explore our classes",
+    "href": "/our-classes"
+  }
+}

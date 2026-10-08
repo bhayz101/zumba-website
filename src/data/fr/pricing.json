@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "title": "Tarifs et pass",
+    "text": "Rejoignez des séances de Zumba pleines d'énergie à Paris, pensées pour vous faire bouger, transpirer et sourire. Choisissez entre un pass à l'unité et des formules mensuelles flexibles, en toute transparence et sans frais cachés."
+  },
+  "intro": {
+    "title": "Tarifs des cours et conditions",
+    "text": "Réservez en ligne via PayPal, payez sur notre site ou réglez en espèces directement à l'entrée avant le début de la séance. Votre premier cours est 100 % gratuit si vous vous abonnez à notre liste de diffusion."
+  },
+  "tables": [
+    {
+      "caption": "Formules",
+      "head": ["Formules", "Tarif"],
+      "rows": [
+        ["Séance à l'unité", "€10.00"],
+        ["Pass mensuel (4 cours)", "€35.00"]
+      ]
+    },
+    {
+      "caption": "Moyens de paiement",
+      "head": ["Moyens de paiement", "Détails"],
+      "rows": [
+        ["Paiement en ligne", "De préférence via le site ou PayPal"],
+        ["Paiement sur place", "Espèces acceptées à l'entrée"],
+        ["Communauté WhatsApp", "Mises à jour et confirmations de réservation en direct"]
+      ]
+    },
+    {
+      "caption": "Conditions et annulation",
+      "head": ["Conditions et annulation", "Règle"],
+      "rows": [
+        ["Validité du pass", "Valable 1 an à compter de l'achat"],
+        ["Préavis de plus de 24 h", "Remboursement à 100 %"],
+        ["Annulation le jour même", "Remboursement à 50 %"],
+        ["Absence sans annulation", "Paiement intégral dû, sans remboursement"]
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Prêt(e) à danser avec nous ?",
+    "text": "Inscrivez-vous à notre newsletter pour obtenir votre premier cours gratuit ou réservez dès aujourd'hui votre place. Découvrez notre planning hebdomadaire complet et ce qui vous attend à chaque séance.",
+    "button": "Découvrir nos cours",
+    "href": "/our-classes"
+  }
+}

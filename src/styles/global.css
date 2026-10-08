@@ -1,0 +1,19 @@
+@import './fonts.css';
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #4e3ac4;
+  --color-brand-dark: #3b2b9a;
+  --color-accent: #e7b0e3;
+  --color-ink: #0d0d0d;
+  --color-paper: #ffffff;
+  --color-soft: #f7f2fb;
+  --font-sans: 'Roboto', system-ui, sans-serif;
+  --font-display: 'Montserrat', 'Roboto', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-sans); color: var(--color-ink); background: var(--color-paper); }
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; }
+:focus-visible { outline: 3px solid var(--color-brand); outline-offset: 3px; }
+.on-brand :focus-visible { outline-color: #ffffff; }

@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Faites connaissance avec B",
+    "text": "Bienvenue chez Zumba with B à Paris ! Découvrez l'histoire derrière la musique, le parcours depuis une petite ville de l'Illinois jusqu'à Paris, et comment une passion inattendue est devenue une communauté de fitness hebdomadaire qui donne de l'élan."
+  },
+  "sections": [
+    {
+      "title": "De l'Illinois à la piste de danse",
+      "text": "J'ai grandi dans une petite ville de l'Illinois, où la danse était une passion discrète que je gardais surtout pour moi. Quand je suis partie en Californie à 20 ans, j'ai commencé à découvrir qui j'étais vraiment. Sur un coup de tête à 21 ans, j'ai suivi un cours de Zumba avec une amie, juste pour faire quelque chose d'amusant un jour comme un autre. Cette seule décision a tout changé. Je suis sortie de ma coquille, j'ai partagé pour la première fois mon amour de la danse en public, puis je suis montée sur la scène en tant qu'instructrice.",
+      "button": { "label": "Découvrir nos cours", "href": "/our-classes" },
+      "image": "/images/9-img_6548-1-standard.png",
+      "alt": "Portrait en noir et blanc de B en train de rire sur scène"
+    },
+    {
+      "title": "Partager la joie, la santé et la confiance",
+      "text": "Enseigner la Zumba a été le tournant décisif : j'ai compris que je pouvais vraiment toucher la vie de quelqu'un d'autre, comme mes propres instructeurs ont marqué la mienne. Aujourd'hui instructrice de Zumba certifiée à Paris, j'ai pour mission de partager un bien-être global, en prenant soin de votre santé physique et mentale. Chaque séance est conçue pour remplir la salle de rires, de bonne humeur et d'expression de soi sincère.",
+      "image": "/images/8-img_4625-standard.png",
+      "alt": "B donnant un cours de Zumba devant un miroir"
+    },
+    {
+      "title": "Un espace bienveillant pour tous",
+      "text": "Dans mes cours, on est comme une famille. C'est votre refuge hebdomadaire pour lâcher prise et être simplement vous-même. Que vous ayez envie de donner un concert de stade ou simplement de délier vos muscles, cette heure vous appartient entièrement. Et si vous êtes nerveux ou pensez avoir deux pieds gauches, ne vous inquiétez surtout pas : tant que vous bougez, vous brûlez des calories !",
+      "button": { "label": "Lire le blog fitness", "href": "/fitness-blog" },
+      "image": "/images/10-img_4955-1-standard.jpg",
+      "alt": "Photo de groupe de la communauté Zumba après le cours"
+    }
+  ],
+  "quote": {
+    "text": "« Le cours de Zumba est le moment fort de ma semaine. Un endroit totalement sans jugement, plein de rires et un entraînement incroyable ! »",
+    "author": "La principale intéressée, B"
+  }
+}

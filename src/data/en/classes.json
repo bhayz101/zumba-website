@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "title": "High-energy dance fitness in Paris",
+    "text": "Join Zumba with B for an invigorating cardio workout powered by Latin rhythms, inclusive movement, and vibrant community energy. No dance experience needed; Just bring your sneakers and your smile.",
+    "image": "/images/3-3775566.jpeg",
+    "alt": "Group dance fitness class in a bright brick studio",
+    "button": {
+      "label": "View pricing and passes",
+      "href": "/pricing-passes"
+    }
+  },
+  "expect": {
+    "title": "What to expect in every session",
+    "intro": "Each class is crafted to provide a total-body cardiovascular workout that feels more like a dance party than gym work. Here is how we break down the evening from the moment you arrive.",
+    "steps": [
+      {
+        "title": "Warm-up and rhythm",
+        "text": "Doors open at 8:40 pm, with classes beginning promptly at 9:00 pm. We ease into the evening with a guided dynamic warm-up to prepare your joints and muscles for action."
+      },
+      {
+        "title": "Cardio party",
+        "text": "Spend 60 minutes moving to vibrant salsa, bachata, merengue, and diverse global beats. Our easy-to-follow choreography lets you push your pace and unleash your style."
+      },
+      {
+        "title": "Cool-down and socialize",
+        "text": "We wind down with calming stretches to enhance recovery, followed by 15 dedicated minutes after class to socialize, chat, and connect with fellow dancers."
+      }
+    ],
+    "button": {
+      "label": "Get your class pass",
+      "href": "/pricing-passes"
+    },
+    "image": "/images/4-img_6554-high.png",
+    "alt": "Instructor mid-jump on a stage under bright lights"
+  },
+  "sections": [
+    {
+      "title": "Designed for all bodies and skill levels",
+      "text": "Never taken a dance class before? You are entirely welcome here. Our sessions welcome students of all ages, backgrounds, and fitness stages in a supportive, judgment-free space."
+    },
+    {
+      "title": "What to bring and arrival times",
+      "text": "Arrive between 8:40 pm and 8:45 pm to get settled. Studio doors close firmly at 9:00 pm on the dot to ensure an uninterrupted experience for all participants. Wear supportive athletic shoes and flexible clothes you love moving in. Don't forget a large bottle of water to stay hydrated throughout the workout.",
+      "image": "/images/6-3927386.jpeg",
+      "alt": "Workout clothes, water bottle, headphones and sneakers laid out on a table"
+    },
+    {
+      "title": "Booking and payment options",
+      "text": "Reserving your spot in advance online is the quickest way to guarantee your place on the dance floor. We also welcome direct messages to reserve, and cash payments are gladly accepted at the door prior to 9:00 pm.",
+      "button": {
+        "label": "Explore passes and rates",
+        "href": "/pricing-passes"
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Section from '../components/Section.astro';
+import PriceTable from '../components/PriceTable.astro';
+import Button from '../components/Button.astro';
+import { getContent, type Lang } from '../lib/i18n';
+import { localizedPath } from '../lib/paths.mjs';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ui = getContent(lang, 'ui');
+const c = getContent(lang, 'pricing');
+import site from '../data/site.json';
+---
+<BaseLayout lang={lang} title={ui.titles.pricing} description={c.hero.text}>
+  <Hero title={c.hero.title} text={c.hero.text} />
+  <Section title={c.intro.title} intro={c.intro.text}>
+    <div class="grid gap-8">
+      {c.tables.map((t) => <PriceTable caption={t.caption} head={t.head as [string, string]} rows={t.rows as [string, string][]} />)}
+    </div>
+    {site.paypal && (
+      <div class="mt-8">
+        <a href={site.paypal} class="inline-flex min-h-12 items-center gap-3 rounded-full bg-[#ffc439] px-6 py-3 font-bold text-[#003087] transition-colors hover:bg-[#f5b82e]">
+          <img src="/images/paypal.svg" alt="" width="24" height="24" class="h-6 w-6" />{ui.payWithPaypal}
+        </a>
+      </div>
+    )}
+  </Section>
+  <Section tone="soft" title={c.cta.title} intro={c.cta.text}>
+    {site.newsletterEndpoint && (
+      <form action={site.newsletterEndpoint} method="post" class="mb-6 flex max-w-md flex-wrap gap-3">
+        <label for="newsletter-email" class="sr-only">{ui.newsletter.label}</label>
+        <input id="newsletter-email" name="email" type="email" required placeholder={ui.newsletter.placeholder} class="min-h-12 flex-1 rounded-full border-2 border-brand px-5" />
+        <button type="submit" class="min-h-12 rounded-full bg-brand px-6 font-bold text-white hover:bg-brand-dark">{ui.newsletter.submit}</button>
+      </form>
+    )}
+    <Button href={localizedPath(lang, c.cta.href)}>{c.cta.button}</Button>
+  </Section>
+</BaseLayout>

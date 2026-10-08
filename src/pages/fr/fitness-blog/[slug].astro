@@ -1,0 +1,10 @@
+---
+import BlogPost from '../../../templates/BlogPost.astro';
+import { getContent } from '../../../lib/i18n';
+
+export function getStaticPaths() {
+  return getContent('fr', 'blog').posts.map((post: { slug: string }) => ({ params: { slug: post.slug }, props: { post } }));
+}
+const { post } = Astro.props;
+---
+<BlogPost lang="fr" post={post} />

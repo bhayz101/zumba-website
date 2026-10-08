@@ -1,0 +1,81 @@
+{
+  "hero": {
+    "title": "Dance, sweat, and let loose",
+    "text": "Experience high-energy, fun-filled Zumba sessions in Paris designed for all fitness levels. Burn calories, boost your mood, and join our vibrant community today.",
+    "image": "/images/0-13409546.jpeg",
+    "alt": "Smiling dancer in a Zumba top mid-move",
+    "buttons": [
+      {
+        "label": "View our classes",
+        "href": "/our-classes"
+      },
+      {
+        "label": "Pricing and passes",
+        "href": "/pricing-passes",
+        "variant": "ghost"
+      }
+    ]
+  },
+  "formats": {
+    "title": "Our class formats",
+    "name": "Classic Zumba",
+    "text": "A high-energy cardio dance workout set to upbeat Latin and international rhythms. Perfect for all experience levels to let loose, burn calories, and smile.",
+    "image": "/images/1-8957645.jpeg",
+    "alt": "Dancers moving together in a bright studio"
+  },
+  "quote": {
+    "text": "\"It becomes more than just a class, it is your weekly get away where you can really just be you.\"",
+    "author": "LA Fitness Member"
+  },
+  "cta": {
+    "title": "Ready to dance into fitness?",
+    "text": "Grab a single class pass, secure a multi-session pack, or join our community WhatsApp group for real-time schedule updates and Parisian dance events.",
+    "button": "Get your class pass",
+    "href": "/pricing-passes"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "intro": "Find quick answers about session locations, what to wear, online payments, and how to stay connected with our Paris dance community.",
+    "items": [
+      {
+        "q": "Do I need prior dance experience?",
+        "a": "Not at all! Every choreography is structured with easy-to-follow steps. It is all about moving to the music and having fun at your own pace."
+      },
+      {
+        "q": "What should I wear and bring?",
+        "a": "Wear supportive indoor sneakers and comfortable athletic clothing. Don't forget a refillable water bottle and a small sweat towel!"
+      },
+      {
+        "q": "How do I purchase session passes online?",
+        "a": "You can purchase individual drop-in passes or multi-class packages directly through our Pricing & Passes page securely using card payment."
+      },
+      {
+        "q": "How do I join the WhatsApp group?",
+        "a": "You can sign up via our contact section or send an email to receive weekly updates, schedule announcements, and direct WhatsApp group invite links."
+      },
+      {
+        "q": "What is the cancellation policy?",
+        "a": "For class booking cancellations, please contact me directly. Cancellations made more than 24 hours before the class start time will receive a 100% refund for that class. Cancellations made within 24 hours of the class start time will receive a 50% refund. No-shows are not eligible for a refund."
+      }
+    ]
+  },
+  "community": {
+    "title": "Join our community",
+    "venue": "Centre Momboye",
+    "city": "Paris, France",
+    "address": "25 Rue Boyer, 75020 Paris",
+    "scheduleTitle": "Weekly class schedule",
+    "schedule": "Every Tuesday 8:45 PM (20 h 45) until 10:15 PM (22 h 15)",
+    "contactTitle": "Get in touch",
+    "contactIntro": "Contact me directly",
+    "whatsappLabel": "Whatsapp group",
+    "email": "b.hayz101@gmail.com",
+    "followTitle": "Follow Zumba with B",
+    "instagramLabel": "Instagram",
+    "calendar": "https://calendar.app.google/cCHH4upGEMzYH4hz6",
+    "instagram": "https://instagram.com/awhbethh",
+    "map": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x47e66d93169280d1:0xf0af5c5646c02da2",
+    "image": "/images/2-16761894.jpeg",
+    "alt": "Parisian street corner near the studio"
+  }
+}

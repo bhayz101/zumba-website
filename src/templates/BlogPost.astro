@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+import Button from '../components/Button.astro';
+import { getContent, type Lang } from '../lib/i18n';
+import { localizedPath } from '../lib/paths.mjs';
+interface Props { lang: Lang; post: { title: string; text: string; image: string; alt: string; focus: string } }
+const { lang, post } = Astro.props;
+const ui = getContent(lang, 'ui');
+---
+<BaseLayout lang={lang} title={post.title} description={post.text.slice(0, 155)}>
+  <Section>
+    <p class="mb-4"><a href={localizedPath(lang, '/fitness-blog')} class="font-bold text-brand underline">{ui.backToBlog}</a></p>
+    <article>
+      <h1 class="mb-6 text-4xl font-bold text-brand">{post.title}</h1>
+      <img src={post.image} alt={post.alt} style={`object-position:${post.focus}`} class="mx-auto mb-6 aspect-[4/5] w-full max-w-md rounded-2xl object-cover" />
+      <p class="text-lg">{post.text}</p>
+    </article>
+    <div class="mt-10 flex flex-wrap gap-3">
+      <Button href={localizedPath(lang, '/our-classes')}>{ui.blogPostButtons.classes}</Button>
+      <Button href={localizedPath(lang, '/fitness-blog')} variant="ghost">{ui.blogPostButtons.more}</Button>
+    </div>
+  </Section>
+</BaseLayout>

@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Danse, fitness et bien-être : nos conseils",
+    "text": "Trouvez de l'inspiration, des conseils pratiques pour débuter, de la motivation pour s'entraîner et le pouvoir stimulant du mouvement. Plongez dans nos derniers articles pour dynamiser votre corps et votre esprit."
+  },
+  "posts": [
+    {
+      "slug": "why-zumba-is-the-workout-you-will-actually-keep",
+      "title": "Pourquoi la Zumba est le sport que vous garderez vraiment",
+      "text": "Vous vous demandez pourquoi la Zumba continue de séduire les passionnés de fitness comme les débutants en danse ? Contrairement aux routines répétitives de salle de sport, la Zumba associe des rythmes latins et internationaux vibrants à des intervalles de cardio dynamiques. On se croirait à une soirée dansante plutôt qu'à un entraînement classique : vous brûlez des calories, améliorez votre coordination et évacuez les tensions du quotidien sans surveiller l'horloge.",
+      "image": "/images/11-6516187.jpeg",
+      "alt": "Femme qui étire son bras dans un studio lumineux",
+      "focus": "50% 40%"
+    },
+    {
+      "slug": "the-power-of-group-energy-in-reaching-your-goals",
+      "title": "La force de l'énergie de groupe pour atteindre vos objectifs",
+      "text": "Rester régulier dans ses objectifs de forme n'est pas toujours simple quand on est seul. Dans un studio de danse fitness collectif, le rythme partagé et l'enthousiasme contagieux créent naturellement de l'engagement. Bouger ensemble construit une communauté bienveillante où les débutants se sentent soutenus et les danseurs réguliers restent motivés semaine après semaine.",
+      "image": "/images/12-8436586.jpeg",
+      "alt": "Femme souriante assise sur un tapis de yoga",
+      "focus": "50% 30%"
+    },
+    {
+      "slug": "the-transformative-mental-health-benefits-of-dance",
+      "title": "Les bienfaits de la danse sur la santé mentale",
+      "text": "La danse fitness offre des bénéfices profonds qui vont bien au-delà de la condition physique. La synchronisation de la musique et du mouvement stimule la libération d'endorphines, réduit les hormones du stress et aiguise la concentration. Montez sur la piste, laissez les pressions du quotidien derrière vous et découvrez comment un mouvement joyeux nourrit votre bien-être mental.",
+      "image": "/images/13-7242828.jpeg",
+      "alt": "Femme souriante aux cheveux bouclés en extérieur",
+      "focus": "50% 30%"
+    }
+  ]
+}
