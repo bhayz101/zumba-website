@@ -6,6 +6,9 @@ import { applyEdits } from './lib/edits.mjs';
 const PAGES = { home: 'index.html', 'our-classes': 'our-classes.html', 'pricing-passes': 'pricing-passes.html', 'about-b': 'about-b.html', 'fitness-blog': 'fitness-blog.html' };
 const text = (html) => decode(html.replace(/<(script|style)[\s\S]*?<\/\1>/gi, '').replace(/<[^>]+>/g, '\n')).replace(/\s+/g, ' ');
 let failed = 0;
+// Preview builds on a sub-path set BASE_PATH; links are then prefixed with it.
+const BASE = (process.env.BASE_PATH ?? '').replace(/\/$/, '');
+const unbase = (h) => (BASE && (h === BASE || h.startsWith(`${BASE}/`)) ? h.slice(BASE.length) || '/' : h);
 const URLS = { home: '/', 'our-classes': '/our-classes', 'pricing-passes': '/pricing-passes', 'about-b': '/about-b', 'fitness-blog': '/fitness-blog' };
 // Owner removed this photo from the 'Designed for all bodies' section.
 const LOCAL_IMAGES_OK_UNUSED = ['/images/5-26088455.jpeg'];
@@ -16,10 +19,11 @@ for (const [slug, file] of Object.entries(PAGES)) {
   const built = text(raw);
   const canonical = raw.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
   if (canonical !== `https://www.zumbawithb.com${URLS[slug]}`) { console.error(`CANONICAL [${slug}] ${canonical}`); failed++; }
-  if (!new RegExp(`href="${URLS[slug]}"[^>]*aria-current="page"|aria-current="page"[^>]*href="${URLS[slug]}"`).test(raw)) { console.error(`NAV aria-current missing [${slug}]`); failed++; }
+  const navHref = BASE + (URLS[slug] === '/' && BASE ? '/' : URLS[slug]);
+  if (!new RegExp(`href="${navHref}"[^>]*aria-current="page"|aria-current="page"[^>]*href="${navHref}"`).test(raw)) { console.error(`NAV aria-current missing [${slug}]`); failed++; }
   for (const { local } of images) {
     if (LOCAL_IMAGES_OK_UNUSED.includes(local)) continue;
-    if (!raw.includes(local)) { console.error(`IMAGE not rendered [${slug}] ${local}`); failed++; }
+    if (!raw.includes(BASE + local)) { console.error(`IMAGE not rendered [${slug}] ${local}`); failed++; }
     try { await readFile(path.join('dist', local)); } catch { console.error(`IMAGE file missing in dist ${local}`); failed++; }
   }
   // Owner removed these buttons from the live copy.
@@ -68,12 +72,13 @@ for (const lang of ['en', 'fr']) {
     for (const [k, v] of Object.entries(want)) if (alt[k] !== v) { console.error(`HREFLANG [${tag}] ${k}=${alt[k]} expected ${v}`); failed++; }
     const sw = [...raw.matchAll(/<a href="([^"]+)" hreflang="(en|fr)"([^>]*)>/g)];
     if (sw.length !== 2) { console.error(`SWITCHER [${tag}] expected 2 links, found ${sw.length}`); failed++; }
-    for (const [, href, hl, rest] of sw) {
+    for (const [, rawHref, hl, rest] of sw) {
+      const href = unbase(rawHref);
       if (!(await exists(href))) { console.error(`SWITCHER [${tag}] target ${href} does not exist`); failed++; }
       if ((hl === lang) !== /aria-current="true"/.test(rest)) { console.error(`SWITCHER [${tag}] aria-current wrong on ${hl}`); failed++; }
     }
     for (const m of raw.matchAll(/<a ([^>]*)>/g)) {
-      const href = m[1].match(/href="(\/[^"]*)"/)?.[1];
+      const href = unbase(m[1].match(/href="(\/[^"]*)"/)?.[1] ?? '') || undefined;
       if (!href || PASSTHROUGH.test(href) || /hreflang=/.test(m[1])) continue;
       const isFr = href === '/fr' || href.startsWith('/fr/');
       if (lang === 'fr' && !isFr) { console.error(`FR LINK [${tag}] points at English page ${href}`); failed++; }
