@@ -13,7 +13,7 @@ const c = getContent(lang, 'home');
 import site from '../data/site.json';
 ---
 <BaseLayout lang={lang} title={ui.titles.home} description={c.hero.text}>
-  <Hero title={c.hero.title} text={c.hero.text} image={c.hero.image} alt={c.hero.alt}>
+  <Hero layout="split" title={c.hero.title} text={c.hero.text} image={c.hero.image} alt={c.hero.alt}>
     {c.hero.buttons.map((b) => <a href={localizedPath(lang, b.href)} class={`inline-flex min-h-12 items-center rounded-full px-6 py-3 font-bold transition-colors ${b.variant === 'ghost' ? 'border-2 border-white text-white hover:bg-white hover:text-brand' : 'bg-white text-brand hover:bg-accent'}`}>{b.label}</a>)}
   </Hero>
   <Section title={c.formats.title}>

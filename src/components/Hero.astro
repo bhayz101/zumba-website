@@ -1,12 +1,25 @@
 ---
-interface Props { title: string; text: string; image?: string; alt?: string }
-const { title, text, image, alt = '' } = Astro.props;
+interface Props { title: string; text: string; image?: string; alt?: string; layout?: 'band' | 'split' }
+const { title, text, image, alt = '', layout = 'band' } = Astro.props;
 ---
-<section class="on-brand relative isolate overflow-hidden bg-brand text-white">
-  {image && <img src={image} alt={alt} class="absolute inset-0 -z-10 h-full w-full object-cover opacity-30" />}
-  <div class="mx-auto max-w-4xl px-4 py-20 text-center">
-    <h1 class="mb-4 text-4xl font-bold md:text-5xl">{title}</h1>
-    <p class="mx-auto mb-8 max-w-2xl text-lg">{text}</p>
-    <div class="flex flex-wrap justify-center gap-3"><slot /></div>
-  </div>
-</section>
+{layout === 'split' && image ? (
+  <section class="on-brand bg-brand text-white">
+    <div class="mx-auto grid max-w-6xl items-stretch md:grid-cols-2">
+      <div class="flex flex-col justify-center px-4 py-16 md:py-24 md:pr-12">
+        <h1 class="mb-4 text-4xl font-bold md:text-5xl">{title}</h1>
+        <p class="mb-8 max-w-xl text-lg">{text}</p>
+        <div class="flex flex-wrap gap-3"><slot /></div>
+      </div>
+      <img src={image} alt={alt} width="1920" height="2688" fetchpriority="high" class="h-80 w-full object-cover object-[50%_20%] md:h-full md:min-h-[32rem]" />
+    </div>
+  </section>
+) : (
+  <section class="on-brand relative isolate overflow-hidden bg-brand text-white">
+    {image && <img src={image} alt={alt} class="absolute inset-0 -z-10 h-full w-full object-cover opacity-30" />}
+    <div class="mx-auto max-w-4xl px-4 py-20 text-center">
+      <h1 class="mb-4 text-4xl font-bold md:text-5xl">{title}</h1>
+      <p class="mx-auto mb-8 max-w-2xl text-lg">{text}</p>
+      <div class="flex flex-wrap justify-center gap-3"><slot /></div>
+    </div>
+  </section>
+)}
