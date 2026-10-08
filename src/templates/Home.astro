@@ -21,10 +21,13 @@ import site from '../data/site.json';
       <img src={c.formats.image} alt={c.formats.alt} loading="lazy" class="aspect-[4/3] w-full rounded-2xl object-cover" />
       <div><h3 class="mb-2 text-2xl font-bold">{c.formats.name}</h3><p>{c.formats.text}</p></div>
     </div>
-    <figure class="mt-10 rounded-2xl bg-soft p-8">
-      <blockquote class="text-xl italic">{c.quote.text}</blockquote>
-      <figcaption class="mt-3 font-bold text-brand">{c.quote.author}</figcaption>
-    </figure>
+    <div class="mt-10 grid items-center gap-8 md:grid-cols-[minmax(0,20rem)_1fr]">
+      <img src={c.hero.image} alt={c.hero.alt} width="1920" height="2688" loading="lazy" class="mx-auto h-auto w-full max-w-xs rounded-2xl" />
+      <figure class="rounded-2xl bg-soft p-8">
+        <blockquote class="text-xl italic">{c.quote.text}</blockquote>
+        <figcaption class="mt-3 font-bold text-brand">{c.quote.author}</figcaption>
+      </figure>
+    </div>
   </Section>
   <Section tone="soft" title={c.cta.title} intro={c.cta.text}><Button href={localizedPath(lang, c.cta.href)}>{c.cta.button}</Button></Section>
   <Section title={c.faq.title} intro={c.faq.intro}><FaqList items={c.faq.items} /></Section>
