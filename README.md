@@ -38,7 +38,7 @@ Edit `src/data/site.json`:
 ## Remaining steps
 
 - [ ] **PayPal:** replace `paypal` in `src/data/site.json` (currently `https://www.paypal.me/REPLACE_ME`). Use a PayPal.me or hosted-button URL.
-- [ ] **Newsletter form:** create a form on Formspree (or similar) and replace `newsletterEndpoint` in `site.json` (currently `https://formspree.io/f/REPLACE_ME`). Check the free-first-class reply or automation works.
+- [x] **Newsletter form:** create a form on Formspree (or similar) and replace `newsletterEndpoint` in `site.json` (set to `https://formspree.io/f/xqpeqpej`). Check the free-first-class reply or automation works.
 - [ ] **Blog articles:** each article page holds only the one paragraph from the live site. Add full article text in `src/data/en/blog.json` and `src/data/fr/blog.json`.
 - [ ] **French copy review:** skim every file in `src/data/fr/` (tone, wording, "vous", the PayPal and newsletter labels) and fix anything that sounds off.
 - [ ] **Images:** resize and compress to about 1200px WebP (several are over 1 MB, one is a 1.8 MB PNG). Add `width`/`height` to `<img>` tags.
